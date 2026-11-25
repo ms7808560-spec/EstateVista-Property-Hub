@@ -1,0 +1,14 @@
+/*
+  EASY CONTENT EDITING:
+  Change the property objects below to update the cards and detail popups.
+  price is a number in PKR. Keep type as House, Apartment, or Villa.
+  Replace image URLs with your own property photos when ready.
+*/
+const properties = [
+  {id:1,title:"The Willow Residence",location:"DHA Phase 6, Lahore",type:"House",price:28500000,priceLabel:"PKR 2.85 Cr",beds:4,baths:4,area:"10 Marla",tag:"Featured",image:"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85",description:"A welcoming family home with generous living spaces, natural light and a calm contemporary finish. Close to everyday essentials and neighborhood amenities."},
+  {id:2,title:"The Urban Loft",location:"Gulberg, Lahore",type:"Apartment",price:12500000,priceLabel:"PKR 1.25 Cr",beds:2,baths:2,area:"1,250 sq ft",tag:"New listing",image:"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85",description:"A bright city apartment with an open-plan layout, modern fittings and convenient access to shopping, dining and business districts."},
+  {id:3,title:"Olive Garden Villa",location:"Bahria Town, Islamabad",type:"Villa",price:42000000,priceLabel:"PKR 4.2 Cr",beds:5,baths:5,area:"1 Kanal",tag:"Premium",image:"https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85",description:"A spacious villa designed for relaxed family living, with landscaped outdoor space, airy rooms and a peaceful setting."},
+  {id:4,title:"The Courtyard House",location:"Johar Town, Lahore",type:"House",price:17800000,priceLabel:"PKR 1.78 Cr",beds:3,baths:3,area:"5 Marla",tag:"Popular",image:"https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85",description:"A practical and stylish home with comfortable bedrooms, a functional kitchen and a private courtyard for everyday moments."},
+  {id:5,title:"Parkview Apartments",location:"F-11, Islamabad",type:"Apartment",price:19800000,priceLabel:"PKR 1.98 Cr",beds:3,baths:2,area:"1,600 sq ft",tag:"Great location",image:"https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85",description:"An elegant apartment in a sought-after area, offering a comfortable layout and easy access to parks, schools and local services."},
+  {id:6,title:"Cedar Hill Villa",location:"Bahria Orchard, Lahore",type:"Villa",price:49500000,priceLabel:"PKR 4.95 Cr",beds:5,baths:6,area:"1 Kanal",tag:"Exclusive",image:"https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85",description:"A refined family villa with generous interiors, a welcoming entrance and room to entertain, relax and grow."}
+];

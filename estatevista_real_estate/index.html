@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find thoughtfully selected homes, apartments and investment properties with EstateVista." />
+  <title>EstateVista | Find a place to call home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="EstateVista home"><span class="brand-mark">E</span><span>estate<span class="brand-light">vista</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav">
+        <a class="active" href="#home">Home</a><a href="#properties">Properties</a><a href="#about">About</a><a href="#services">Services</a>
+        <a class="nav-contact" href="#contact">Contact us <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow hero-eyebrow"><span></span> FIND YOUR PLACE IN THE WORLD</p>
+        <h1>A home is where<br><em>your story</em> begins.</h1>
+        <p class="hero-copy">Discover spaces that feel right, in neighborhoods you'll love. Your next chapter starts here.</p>
+        <a class="btn btn-primary" href="#properties">Explore properties <span>↗</span></a>
+      </div>
+      <div class="hero-note"><span class="note-line"></span><span>Thoughtful spaces. Better living.</span></div>
+      <div class="hero-counter"><strong>01</strong><span> / 03</span></div>
+    </section>
+
+    <section class="search-section">
+      <div class="container">
+        <form class="search-panel" id="searchForm">
+          <label class="search-field"><span>LOCATION</span><input id="locationSearch" type="text" placeholder="City or neighborhood" /></label>
+          <label class="search-field"><span>PROPERTY TYPE</span><select id="typeSearch"><option value="all">Any property</option><option value="House">House</option><option value="Apartment">Apartment</option><option value="Villa">Villa</option></select></label>
+          <label class="search-field"><span>MAXIMUM PRICE</span><select id="priceSearch"><option value="all">Any budget</option><option value="15000000">Up to PKR 1.5 Cr</option><option value="30000000">Up to PKR 3 Cr</option><option value="50000000">Up to PKR 5 Cr</option></select></label>
+          <button class="btn btn-dark search-btn" type="submit"><span>⌕</span> Search homes</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section properties-section" id="properties">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> HANDPICKED FOR YOU</p><h2>Find a place you'll<br><em>love to live.</em></h2></div>
+          <p class="section-intro">From quiet family homes to modern city apartments, explore spaces selected for the way you want to live.</p>
+        </div>
+        <div class="property-toolbar"><div class="filter-tabs" id="filterTabs"><button class="filter-tab active" data-filter="all">All properties</button><button class="filter-tab" data-filter="House">Houses</button><button class="filter-tab" data-filter="Apartment">Apartments</button><button class="filter-tab" data-filter="Villa">Villas</button></div><span class="results-count" id="resultsCount"></span></div>
+        <div class="property-grid" id="propertyGrid" aria-live="polite"></div>
+        <div class="center-action"><button class="btn btn-outline" id="resetFilters">View all properties <span>↗</span></button></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-image-wrap"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Warm, modern living room" /><div class="image-caption"><strong>Spaces with purpose.</strong><span>Homes that fit your life.</span></div></div>
+        <div class="about-copy"><p class="eyebrow"><span></span> A MORE PERSONAL APPROACH</p><h2>Real estate,<br><em>made human.</em></h2><p>Finding a home is more than a search. It's about the people, routines and little moments that make a place yours. We make the journey clearer, simpler and more personal.</p><div class="stats-row"><div><strong>250<span>+</span></strong><small>Properties listed</small></div><div><strong>98<span>%</span></strong><small>Happy clients</small></div><div><strong>12</strong><small>Years of insight</small></div></div><a href="#contact" class="text-link">Get to know us <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading compact"><div><p class="eyebrow"><span></span> HOW WE HELP</p><h2>More than finding<br><em>four walls.</em></h2></div><p class="section-intro">A thoughtful team, practical guidance and support at every step of your property journey.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><span class="service-number">01</span><div class="service-icon">⌂</div><h3>Buy a property</h3><p>Explore carefully selected homes and get guidance from first viewing to final paperwork.</p><a href="#contact">Explore buying <span>↗</span></a></article>
+          <article class="service-card featured"><span class="service-number">02</span><div class="service-icon">⌑</div><h3>Sell with confidence</h3><p>Present your property to the right audience with a clear, considered selling plan.</p><a href="#contact">Explore selling <span>↗</span></a></article>
+          <article class="service-card"><span class="service-number">03</span><div class="service-icon">◇</div><h3>Property advice</h3><p>Make informed decisions with straightforward advice about locations and opportunities.</p><a href="#contact">Get advice <span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div><p class="eyebrow light"><span></span> LET'S START A CONVERSATION</p><h2>Your next move<br>starts <em>right here.</em></h2><p class="contact-copy">Tell us what you're looking for. We'll help you take the next step with confidence.</p><div class="contact-detail"><span>EMAIL US</span><a href="mailto:hello@estatevista.example">hello@estatevista.example</a></div><div class="contact-detail"><span>CALL US</span><a href="tel:+923001234567">+92 300 123 4567</a></div></div>
+        <form class="contact-form" id="contactForm"><div class="form-row"><label>Your name<input required name="name" placeholder="Enter your name" /></label><label>Email address<input required type="email" name="email" placeholder="you@example.com" /></label></div><label>I'm interested in<select name="interest"><option>Buying a property</option><option>Selling a property</option><option>Property advice</option><option>Other enquiry</option></select></label><label>Your message<textarea required name="message" rows="4" placeholder="Tell us a little about what you need..."></textarea></label><button class="btn btn-primary" type="submit">Send enquiry <span>↗</span></button><p class="form-message" id="formMessage" role="status"></p></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">E</span><span>estate<span class="brand-light">vista</span></span></a><p>Find your place. Begin your story.</p><a href="#home" class="back-top">Back to top ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> EstateVista. Demo website.</span><span>Designed for better living.</span></div></footer>
+
+  <dialog class="property-modal" id="propertyModal"><button class="modal-close" id="modalClose" aria-label="Close details">×</button><div id="modalContent"></div></dialog>
+  <script src="js/properties.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
